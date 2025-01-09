@@ -4,3 +4,16 @@
     border: 0;
     box-sizing: border-box;
 }
+
+body  {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
