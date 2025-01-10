@@ -9,81 +9,81 @@ h3 {
     font-family: "Raleway", serif;
 }
 
-.intro {
-    background: url(../images/bg-curvy-desktop.svg) no-repeat 50% 150% hsl(217, 28%, 15%);
-
-    header {
-        /* position: fixed; */
-        padding: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .logo {
-            img {
-                width: 70%;
-            }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: hsl(217, 28%, 15%);
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        img {
+            width: 70%;
         }
+    }
+    nav {
+        min-width: 200px;
 
-        nav {
-            min-width: 200px;
+        ul {
+            display: flex;
+            gap: 10%;
 
-            ul {
-                display: flex;
-                gap: 10%;
+            li {
+                a {
+                    color: #7d8fa3;
+                    transition: 0.3s ease-in-out;
+                }
 
-                li {
-                    a {
-                        color: #7d8fa3;
-                        transition: 0.3s ease-in-out;
-                    }
-
-                    a:hover {
-                        text-decoration: underline;
-                        color: #fff;
-                    }
+                a:hover {
+                    text-decoration: underline;
+                    color: #fff;
                 }
             }
         }
     }
+}
 
-    .product-description {
+.product-description {
+    width: 100%;
+    text-align: center;
+    background: url(../images/bg-curvy-desktop.svg) no-repeat 50% 150% hsl(217, 28%, 15%);
+
+    img {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         text-align: center;
 
-        img {
-            width: 50%;
-            margin-bottom: 30px;
-        }
-
-        .info {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            text-align: center;
-
-            h2,
-            p {
-                max-width: 50%;
-                margin-bottom: 25px;
-            }
-        }
-
-        button {
-            background-color: hsl(198, 60%, 50%);
-            color: white;
-            padding: 15px 65px;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: 0.3s ease-in-out;
-        }
-
-        button:hover {
-            background-color: hsl(176, 68%, 64%);
+        h2,
+        p {
+            max-width: 50%;
+            margin-bottom: 25px;
         }
     }
+
+    button {
+        background-color: hsl(198, 60%, 50%);
+        color: white;
+        padding: 15px 65px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background-color: hsl(176, 68%, 64%);
+    }
 }
+
 
 .content {
     padding-top: 70px;
@@ -96,7 +96,7 @@ h3 {
             "collab files";
         justify-content: center;
         align-items: center;
-        grid-gap: 20%;
+        gap: 20%;
         padding-bottom: 200px;
 
         .card {
@@ -142,13 +142,19 @@ h3 {
     }
 
     .produtivity {
-        display: flex;
+        display: grid;
+        grid-template-areas: "productive-team productivity-info";
         padding-inline: 30px;
         align-items: center;
         justify-content: center;
         gap: 5%;
 
+        img.productive-team {
+            grid-area: productive-team;
+        }
+
         .info {
+            grid-area: productivity-info;
             padding-inline: 10px;
 
             h2,
@@ -203,7 +209,7 @@ h3 {
             grid-template-areas: "satish bruce iva";
             justify-content: center;
             align-items: center;
-            grid-gap: 30px;
+            grid-gap: 3%;
             padding-top: 10%;
             padding-bottom: 25%;
 
@@ -312,12 +318,13 @@ h3 {
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas: "logo logo logo logo logo" "info info info info info";
     background-color: hsl(216, 53%, 9%);
     padding: 12% 10% 5%;
 
     .logo {
+        grid-area: logo;
         padding-bottom: 45px;
 
         img {
@@ -335,6 +342,7 @@ footer {
     }
 
     .info {
+        grid-area: info;
         display: grid;
         grid-template-areas: "loc address nav1 nav2 socials";
         color: #7d8fa3;
