@@ -46,49 +46,47 @@ header {
     }
 }
 
-.product-description {
-    width: 100%;
-    text-align: center;
-    background: url(../images/bg-curvy-desktop.svg) no-repeat 50% 150% hsl(217, 28%, 15%);
-
-    img {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-
-    .info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-
-        h2,
-        p {
-            max-width: 50%;
-            margin-bottom: 25px;
-        }
-    }
-
-    button {
-        background-color: hsl(198, 60%, 50%);
-        color: white;
-        padding: 15px 65px;
-        border-radius: 30px;
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-    }
-
-    button:hover {
-        background-color: hsl(176, 68%, 64%);
-    }
-}
-
-
 .content {
-    padding-top: 70px;
     background-color: hsl(218, 28%, 13%);
     position: relative;
+
+    .product-description {
+        width: 100%;
+        text-align: center;
+        background: url(../images/bg-curvy-desktop.svg) no-repeat 50% 150% hsl(217, 28%, 15%);
+    
+        img {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+    
+            h2,
+            p {
+                max-width: 50%;
+                margin-bottom: 25px;
+            }
+        }
+    
+        button {
+            background-color: hsl(198, 60%, 50%);
+            color: white;
+            padding: 15px 65px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+    
+        button:hover {
+            background-color: hsl(176, 68%, 64%);
+        }
+    }
 
     .product-abilities {
         display: grid;
@@ -97,6 +95,7 @@ header {
         justify-content: center;
         align-items: center;
         gap: 20%;
+        padding-top: 100px;
         padding-bottom: 200px;
 
         .card {
@@ -195,7 +194,7 @@ header {
         justify-content: center;
         align-items: center;
         position: relative;
-
+        
         img.bg-quotes {
             position: absolute;
             top: 17%;
@@ -321,14 +320,15 @@ footer {
     display: grid;
     grid-template-areas: "logo logo logo logo logo" "info info info info info";
     background-color: hsl(216, 53%, 9%);
-    padding: 12% 10% 5%;
+    padding: 11% 10% 5%;
 
     .logo {
         grid-area: logo;
         padding-bottom: 45px;
+        padding-top: 5%;
 
         img {
-            width: 9%;
+            width: 12%;
         }
     }
 
@@ -345,6 +345,7 @@ footer {
         grid-area: info;
         display: grid;
         grid-template-areas: "loc address nav1 nav2 socials";
+        gap: 4.2%;
         color: #7d8fa3;
 
         .loc {
