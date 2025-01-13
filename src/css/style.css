@@ -150,6 +150,7 @@ header {
 
         img.productive-team {
             grid-area: productive-team;
+            width: 100%;
         }
 
         .info {
