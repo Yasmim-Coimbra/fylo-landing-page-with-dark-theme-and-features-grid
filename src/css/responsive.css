@@ -7,6 +7,9 @@
 }
 
 @media (max-width: 870px) {
+    body {
+        background-color: hsl(216, 53%, 9%);
+    }
     .content {
         .product-description {
             font-size: 22px;
