@@ -1,0 +1,229 @@
+@media (max-width: 1070px) {
+    footer {
+        .logo {
+            padding-top: 10%;
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .content {
+        .product-description {
+            font-size: 22px;
+
+            .info {
+
+                h2,
+                p {
+                    max-width: 80%;
+                }
+            }
+
+            button {
+                font-size: 22px;
+                width: 45%;
+            }
+        }
+
+        .product-abilities {
+            grid-template-areas: "access" "security" "collab" "files";
+            gap: 10%;
+
+            .card {
+                max-width: 600px;
+
+                p,
+                h3 {
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+            }
+        }
+
+        .produtivity {
+            padding-top: 40%;
+            display: grid;
+            grid-template-areas: "productive-team" "productivity-info";
+
+            .info {
+
+                h2,
+                p {
+                    max-width: 600px;
+                }
+
+                p {
+                    font-size: 30px;
+                    line-height: 42px;
+                }
+            }
+        }
+
+        .testimonials {
+            padding-top: 20%;
+
+            .cards {
+                grid-template-areas: "satish" "bruce" "iva";
+                width: 100%;
+
+                .testimonial {
+                    max-width: 60%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .email {
+            padding-top: 20%;
+
+            .card {
+                width: 70%;
+
+                form {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    input {
+                        width: 203px;
+                        height: 45px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        grid-template-areas: "logo" "info";
+        padding-bottom: 0;
+
+        .logo {
+            padding-top: 25%;
+
+            img {
+                width: 22%;
+            }
+        }
+
+        .info {
+            grid-template-areas: "loc" "address" "nav1" "nav2" "socials";
+
+            address {
+                padding-bottom: 10%;
+
+                p {
+                    gap: 2.5%;
+                }
+            }
+
+            nav.first,
+            nav.last,
+            .socials {
+                padding-bottom: 10%;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .content {
+        .product-abilities {
+            padding-bottom: 50%;
+        }
+
+        .email {
+            .card {
+                width: 85%;
+            }
+        }
+    }
+
+    footer {
+        .logo {
+            padding-top: 30%;
+        }
+    }
+}
+
+@media (max-width: 545px) {
+    .content {
+        .product-description {
+            button {
+                font-size: 17px;
+            }
+        }
+
+        .testimonials {
+            .cards {
+                padding-bottom: 45%;
+            }
+        }
+    }
+
+    footer {
+        .logo {
+            padding-top: 40%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .content {
+        .product-description {
+            button {
+                width: 60%;
+            }
+        }
+
+        .product-abilities {
+            padding-bottom: 90%;
+        }
+
+        .testimonials {
+            .cards {
+                padding-bottom: 60%;
+            }
+        }
+    }
+
+    footer {
+        .logo {
+            padding-top: 50%;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    footer {
+        .logo {
+            padding-top: 60%;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .content {
+        .product-description {
+            button {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .content {
+        .testimonials {
+            .cards {
+                padding-bottom: 75%;
+            }
+        }
+    }
+
+    footer {
+        .logo {
+            padding-top: 75%;
+        }
+    }
+}
