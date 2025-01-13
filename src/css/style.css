@@ -194,15 +194,6 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
-        
-        img.bg-quotes {
-            position: absolute;
-            top: 17%;
-            right: 88%;
-            width: 55px;
-            height: 45px;
-        }
 
         .cards {
             display: grid;
