@@ -82,6 +82,12 @@
             .card {
                 width: 70%;
 
+                .email-error.on {
+                    align-self: normal;
+                    margin-left: 0;
+                    padding-top: 10px;
+                }
+
                 form {
                     flex-direction: column;
                     align-items: center;
