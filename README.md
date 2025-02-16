@@ -20,6 +20,8 @@ Usuários devem poder ver:
 
 - CSS
 
+- JavaScript
+
 ## Aprendizado
 
 - Pratiquei o uso conjunto de FLEXBOX e GRID, usando de suas propriedades para criar um layout satisfatório e responsivo.
